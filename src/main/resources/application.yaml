@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.johnpaulcas.SerializationKt.configureSerialization
+      - com.johnpaulcas.SecurityKt.configureSecurity
+      - com.johnpaulcas.StatusPagesKt.configureStatusPages
+      - com.johnpaulcas.RoutingKt.configureRouting
